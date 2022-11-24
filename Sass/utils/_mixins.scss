@@ -1,0 +1,38 @@
+@use 'variables' as *;
+@use 'functions' as f;
+@mixin star-template($numStars, $starSize, $scrollSpeed) {
+    z-index: 10;
+    width: $starSize;
+    height: $starSize;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: f.create-stars($numStars);
+    animation: animStar $scrollSpeed linear infinite;
+    &:after {
+        content: " ";
+        top: -$starStartOffset;
+        width: $starSize;
+        height: $starSize;
+        border-radius: 50%;
+        position: absolute;
+        background: transparent;
+        box-shadow: f.create-stars($numStars);
+    }
+}
+
+@mixin shooting-star-template($numStars, $starSize, $speed) {
+    z-index: 10;
+    width: $starSize;
+    height: $starSize + 80px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
+    animation: animShootingStar $speed linear infinite;
+  }

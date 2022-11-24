@@ -1,0 +1,9 @@
+@use 'variables' as *;
+@function create-stars($n) {
+    $stars: "#{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF";
+  
+    @for $i from 2 through $n {
+      $stars: "#{$stars} , #{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF";
+    }
+    @return unquote($stars);
+}

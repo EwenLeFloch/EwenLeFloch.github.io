@@ -1,0 +1,25 @@
+@use '../utils/variables' as *;
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-#{$starFieldHeight}px)
+      translateX(-#{$starFieldWidth}px);
+  }
+}
+
+@keyframes animShootingStar {
+    from {
+        transform: translateY(0px) translate(0px) rotate(-45deg);
+        opacity: 1;
+        height: 5px;
+    }
+    to {
+        transform: translateY(-#{$starFieldHeight}px)
+            translateX(-#{$starFieldWidth}px) rotate(-45deg);
+            opacity: 1;
+            height: 800px;
+    }
+}

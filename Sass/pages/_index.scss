@@ -1,0 +1,131 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as v;
+
+
+.main-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #201c2f 0%, #100751 100%);
+}
+  
+.stars1 {
+    @include star-template(v.$numStarOneStars, 1px, v.$starOneScrollDuration);
+}
+.stars2 {
+    @include star-template(v.$numStarTwoStars, 2px, v.$starTwoScrollDuration);
+}
+.stars3 {
+    @include star-template(v.$numStarThreeStars, 3px, v.$starThreeScrollDuration);
+}
+.comet {
+    @include shooting-star-template(v.$numComet, 5px, 5s);
+}
+
+.cloud {
+    position: absolute;
+    background: url(cloud.png) no-repeat;
+    background-size: 100%;
+    &1 {
+        width: 700px;
+        height: 700px;
+        animation: cloud-animation 20s linear infinite;
+    }
+    &2 {
+        width: 100%;
+        height: 100%;
+        animation: cloud-animation2 15s linear infinite;
+    }
+    &3 {
+        width: 1000px;
+        height: 1000px;
+        top: -20%;
+        &-beginning {
+            animation: cloud-animation3 15s linear infinite;
+        }
+        &-end {
+            animation: cloud-animation4 15s linear infinite;
+        }
+    }
+
+}
+@keyframes cloud-animation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(calc(100% + 700px));
+    }
+}
+@keyframes cloud-animation2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes cloud-animation3 {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}
+@keyframes cloud-animation4 {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+    &1 {
+        z-index: 1000;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+        animation: animate 15s linear infinite;
+    }
+    &2 {
+        z-index: 999;
+        opacity: .5;
+        animation-delay: -5s;
+        bottom: 10px;
+        animation: animate2 15s linear infinite;
+    }
+    &3 {
+        z-index: 998;
+        opacity: .5;
+        animation-delay: -2s;
+        bottom: 15px;
+        animation: animate 5s linear infinite;
+    }
+    &4 {
+        z-index: 997;
+        opacity: .7;
+        animation-delay: -5s;
+        bottom: 20px;
+        animation: animate2 5s linear infinite;
+    }
+}
+
+@keyframes animate {
+    0% {background-position-x: 0;}
+    100% {background-position-x: 1000px;}
+}
+@keyframes animate2 {
+    0% {background-position-x: 0;}
+    100% {background-position-x: -1000px;}
+}
