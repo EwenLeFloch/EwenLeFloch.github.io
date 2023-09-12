@@ -1,0 +1,19 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
+* {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	@include m.size(100%, 100%);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}

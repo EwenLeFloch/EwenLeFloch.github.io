@@ -1,0 +1,9 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
+* {
+	font-family: Coves;
+}
+#root {
+	@include m.flex(space-between, $direction: column, $align: center);
+}

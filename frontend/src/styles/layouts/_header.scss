@@ -1,0 +1,30 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
+.header {
+	@include m.size(100%, 48px);
+	&__nav {
+		@include m.size(100%, 100%);
+		@include m.flex(flex-end);
+
+		&__list {
+			@include m.size(calc(100% - 48px), 100%);
+			@include m.flex(space-around, center);
+			&__item {
+				@include m.font($size: 18px);
+				& > a {
+					@include m.flex($align: center);
+				}
+				& > .active {
+					color: v.$primary-color;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header__nav__list.--closed {
+		display: none;
+	}
+}
