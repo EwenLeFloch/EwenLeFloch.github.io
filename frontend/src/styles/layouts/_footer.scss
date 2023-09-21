@@ -1,0 +1,7 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
+.footer {
+	@include m.size(100%, 200px);
+	background-color: v.$primary-color;
+}

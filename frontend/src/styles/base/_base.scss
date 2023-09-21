@@ -6,4 +6,5 @@
 }
 #root {
 	@include m.flex(space-between, $direction: column, $align: center);
+	@include m.size(100%, 100%);
 }

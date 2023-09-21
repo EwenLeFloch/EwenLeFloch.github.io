@@ -2,21 +2,23 @@
 @use "../utils/mixins" as m;
 
 .header {
-	@include m.size(100%, 48px);
+	@include m.size(100%, 60px);
 	&__nav {
 		@include m.size(100%, 100%);
 		@include m.flex(flex-end);
 
 		&__list {
-			@include m.size(calc(100% - 48px), 100%);
+			@include m.size(100%, 100%);
 			@include m.flex(space-around, center);
 			&__item {
 				@include m.font($size: 18px);
+				@include m.flex(center, center);
 				& > a {
-					@include m.flex($align: center);
+					@include m.size(100px);
+					color: black;
 				}
 				& > .active {
-					color: v.$primary-color;
+					color: #7510f7;
 				}
 			}
 		}

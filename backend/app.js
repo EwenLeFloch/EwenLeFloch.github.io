@@ -1,8 +1,15 @@
 const express = require("express");
+const helmet = require("helmet");
+const sanitize = require("express-mongo-sanitize");
+
 const app = express();
 
 //Middleware pour gérer les requêtes JSON
 app.use(express.json());
+
+//Middleware pour la sécurité
+app.use(sanitize());
+app.use(helmet({ crossOriginPolicy: false }));
 
 //Middleware pour gérer les en-têtes CORS
 app.use((req, res, next) => {

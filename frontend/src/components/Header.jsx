@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Divide as Hamburger } from "hamburger-react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Header = () => {
-	const location = useLocation();
 	const [isOpen, setOpen] = useState(false);
 
 	if (isOpen) {
@@ -16,37 +15,10 @@ const Header = () => {
 					}`}
 				>
 					<li className="header__nav__list__item">
-						<Link
-							className={
-								location.hash === "#home" ||
-								location.hash === ""
-									? "active"
-									: ""
-							}
-							to="#home"
-						>
-							Ewen
-						</Link>
+						<NavLink to="/">Ewen</NavLink>
 					</li>
 					<li className="header__nav__list__item">
-						<Link
-							className={
-								location.hash === "#projects" ? "active" : ""
-							}
-							to="#projects"
-						>
-							Projects
-						</Link>
-					</li>
-					<li className="header__nav__list__item">
-						<Link
-							className={
-								location.hash === "#contact" ? "active" : ""
-							}
-							to="#contact"
-						>
-							Contact
-						</Link>
+						<NavLink to="/projects">Projects</NavLink>
 					</li>
 				</ul>
 				<Hamburger
