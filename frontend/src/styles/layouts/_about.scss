@@ -12,6 +12,7 @@
 		&__title {
 			@include m.font(black, 40px);
 			font-family: Georgia;
+			align-items: center;
 		}
 	}
 	&__description {
@@ -24,9 +25,7 @@
 		transform: translateX(-50%);
 		&__container {
 			position: relative;
-			width: 100%;
-			flex-grow: 1;
-			flex-shrink: 0;
+			@include m.size(100%, 100%);
 		}
 	}
 	&__logo {
