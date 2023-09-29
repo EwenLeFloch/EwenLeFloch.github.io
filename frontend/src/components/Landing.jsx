@@ -7,7 +7,10 @@ const Landing = () => {
 			<div className="home__text">
 				<h1 className="home__text__title">
 					<TypeWriter
-						strings={["HI, I'M EWEN.", "I AM A WEB DEVELOPPER."]}
+						strings={[
+							"SALUT ! MOI  C'EST EWEN.",
+							"JE SUIS DÉVELOPPEUR WEB",
+						]}
 						typeSpeed={50}
 						loop
 					/>

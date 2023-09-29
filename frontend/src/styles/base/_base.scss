@@ -11,8 +11,19 @@
 
 main {
 	@include m.size(100%, 100%);
-	z-index: -1;
 }
 section {
 	@include m.size(100%, 100vh);
+	&:nth-child(even) {
+		background-color: v.$primary-color;
+		& > * {
+			color: white;
+		}
+	}
+}
+
+h2 {
+	@include m.flex(center);
+	padding-top: 100px;
+	font-size: 40px;
 }

@@ -1,0 +1,31 @@
+.carousel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.carousel-content {
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-slide {
+	min-width: 0%;
+	transition: min-width 0.3s ease-in-out;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.carousel-slide.active {
+	min-width: 100%;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+}

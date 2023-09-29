@@ -31,11 +31,21 @@ const Header = () => {
 					<li className="header__nav__list__item">
 						<Link
 							className={
+								location.hash === "#about" ? "active" : ""
+							}
+							to="#about"
+						>
+							À propos
+						</Link>
+					</li>
+					<li className="header__nav__list__item">
+						<Link
+							className={
 								location.hash === "#projects" ? "active" : ""
 							}
 							to="#projects"
 						>
-							Projects
+							Projets
 						</Link>
 					</li>
 				</ul>

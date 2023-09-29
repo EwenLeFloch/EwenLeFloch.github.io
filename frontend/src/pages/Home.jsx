@@ -3,6 +3,7 @@ import Header from "../layouts/Header";
 import Footer from "../layouts/Footer";
 import Projects from "../components/Projects";
 import Landing from "../components/Landing";
+import About from "../components/About";
 
 const Home = () => {
 	return (
@@ -10,6 +11,7 @@ const Home = () => {
 			<Header />
 			<main className="main">
 				<Landing />
+				<About />
 				<Projects />
 			</main>
 			<Footer />
