@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Divide as Hamburger } from "hamburger-react";
-import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+
 const Header = () => {
 	const [isOpen, setOpen] = useState(false);
+	const location = useLocation();
 
-	if (isOpen) {
-	}
 	return (
 		<header className="header">
 			<nav className="header__nav">
@@ -15,10 +16,27 @@ const Header = () => {
 					}`}
 				>
 					<li className="header__nav__list__item">
-						<NavLink to="/">Ewen</NavLink>
+						<Link
+							className={
+								location.hash === "#home" ||
+								location.hash === ""
+									? "active"
+									: ""
+							}
+							to="#home"
+						>
+							Ewen
+						</Link>
 					</li>
 					<li className="header__nav__list__item">
-						<NavLink to="/projects">Projects</NavLink>
+						<Link
+							className={
+								location.hash === "#projects" ? "active" : ""
+							}
+							to="#projects"
+						>
+							Projects
+						</Link>
 					</li>
 				</ul>
 				<Hamburger

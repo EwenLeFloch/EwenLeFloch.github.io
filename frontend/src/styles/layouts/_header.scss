@@ -2,6 +2,7 @@
 @use "../utils/mixins" as m;
 
 .header {
+	@include m.position(fixed);
 	@include m.size(100%, 60px);
 	&__nav {
 		@include m.size(100%, 100%);
@@ -16,6 +17,7 @@
 				& > a {
 					@include m.size(100px);
 					color: black;
+					z-index: 2;
 				}
 				& > .active {
 					color: #7510f7;

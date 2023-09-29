@@ -1,0 +1,31 @@
+[
+	{
+		"id": "1",
+		"title": "Booki",
+		"cover": "",
+		"description": "Booki is a website that enables users to find accomodations and activities within the city of their choice.",
+		"role": "Frontend Developer",
+		"languages": [
+			"HTML",
+			"CSS"
+		],
+		"link": "https://ewenlefloch.github.io/booki/",
+		"github": "https://github.com/EwenLeFloch/booki",
+		"project": "School"
+	},
+	{
+		"id": "2",
+		"title": "ArchiWebos",
+		"cover": "",
+		"description": "ArchiWebos is a web agency, this particular website is for an interior designer",
+		"role": "Frontend Developer",
+		"languages": [
+			"HTML",
+			"CSS",
+			"Javascript"
+		],
+		"link": "https://ewenlefloch.github.io/archiwebos/",
+		"github": "https://github.com/EwenLeFloch/archiwebos",
+		"project": "School"
+	}
+]
