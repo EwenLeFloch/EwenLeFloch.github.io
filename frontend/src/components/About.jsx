@@ -4,12 +4,10 @@ import Carousel from "./Carousel";
 const About = () => {
 	const contentItems = [
 		{
-			title: "Titre 1",
-			paragraph: "Description du contenu 1.",
+			title: "MOI",
 		},
 		{
-			title: "Titre 2",
-			paragraph: "Description du contenu 2.",
+			title: "MA FORMATION",
 		},
 		{
 			title: "Titre 3",
@@ -18,8 +16,7 @@ const About = () => {
 	];
 
 	return (
-		<section id="about" className="about">
-			<h2>À PROPOS DE</h2>
+		<section id="about" className="carousel">
 			<Carousel items={contentItems} />
 		</section>
 	);

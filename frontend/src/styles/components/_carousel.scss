@@ -1,31 +1,66 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
 .carousel {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 80%;
-	margin: 0 auto;
-	padding: 20px;
+	@include m.flex(center, center, column);
+	&__container {
+		@include m.size(100%, 100%);
+		@include m.flex();
+		overflow: hidden;
+		&__slide {
+			min-width: 0%;
+			transition: min-width 0.3s ease-in-out;
+			overflow: hidden;
+			&.active {
+				min-width: 100%;
+			}
+		}
+	}
+	&__content {
+		@include m.size(100%, 100%);
+		&__title {
+			@include m.font($size: 40px);
+			text-align: center;
+		}
+		&__text {
+			@include m.size(50%, 100%);
+			@include m.flex($align: center);
+			text-align: justify;
+			padding-left: 100px;
+			&__container {
+				@include m.size(100%, 100%);
+				@include m.flex(space-evenly);
+				flex-basis: auto;
+				padding: 100px;
+				@include m.font($size: 20px);
+			}
+		}
+	}
+	&__button {
+		@include m.position(absolute);
+		@include m.font($size: 40px);
+		@include m.size(100px, 100%);
+		&--prev {
+			left: 0;
+		}
+		&--next {
+			right: 0;
+		}
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
 }
 
-.carousel-content {
-	display: flex;
-	overflow: hidden;
-	width: 100%;
-}
-
-.carousel-slide {
-	min-width: 0%;
-	transition: min-width 0.3s ease-in-out;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-.carousel-slide.active {
-	min-width: 100%;
-}
-
-button {
-	padding: 10px 20px;
-	font-size: 18px;
-	cursor: pointer;
+.presentation {
+	@include m.size(50%);
+	@include m.font($size: 20px);
+	&__menu {
+		@include m.flex(space-evenly);
+		@include m.size(100%);
+	}
+	&__item {
+		@include m.font($size: 20px);
+		cursor: pointer;
+	}
 }

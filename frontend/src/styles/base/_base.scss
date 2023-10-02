@@ -22,7 +22,7 @@ section {
 	}
 }
 
-h2 {
+.section__title {
 	@include m.flex(center);
 	padding-top: 100px;
 	font-size: 40px;
