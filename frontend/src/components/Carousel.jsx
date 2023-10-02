@@ -33,14 +33,48 @@ const Carousel = ({ items }) => {
 						ce qui m'entoure et apprendre à les recréer moi-même.
 						Curieux et aimant le travail en équipe, je cherche à
 						intégrer une entreprise afin d'apprendre à programmer
-						avec d'autres développeur. <br />
-						Disponible sur RENNES et ses alentours.
+						avec d'autres développeurs. <br />
+						Disponible sur RENNES et ses alentours, je recherche un
+						poste de développeur web Junior. <br /> <br />
+						Mes skills : HTML, CSS, SCSS, JAVASCRIPT, REACT, MONGODB
+						et NODE JS.
+						<br /> <br />
+						Logiciels utilisés : GITHUB, VSCODE, POSTMAN.
 					</p>
-					<img></img>
+					<img
+						className="carousel__image"
+						src="assets/images/ewen.webp"
+						alt="Ewen Le Floch"
+					></img>
 				</div>
 			);
 		} else {
-			return <p className="carousel__content__text">{item.paragraph}</p>;
+			return (
+				<div className="carousel__content__text__container">
+					<div className="carousel__content__text">
+						J'ai suivi la formation développeur web
+						d'OpenClassrooms. <br />
+						OpenClassrooms est une école de formations en ligne,
+						celles-ci sont basées sur des projets
+						professionnalisant. En plus des différents langages
+						appris sur cette plateforme, ces projets m'ont permis
+						d'apprendre :
+						<ul className="carousel__content__text__list">
+							<li>L'autonomie et la recherche</li>
+							<li>L'organisation de projet (Notion)</li>
+							<li>
+								L'utilisation de différents logiciels. (Github,
+								Figma)
+							</li>
+						</ul>
+					</div>
+					<img
+						className="carousel__image carousel__image--formation"
+						src="assets/images/openclassrooms.webp"
+						alt="Ewen Le Floch"
+					></img>
+				</div>
+			);
 		}
 	};
 

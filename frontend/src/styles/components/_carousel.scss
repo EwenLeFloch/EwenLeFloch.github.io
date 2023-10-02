@@ -8,11 +8,12 @@
 		@include m.flex();
 		overflow: hidden;
 		&__slide {
-			min-width: 0%;
-			transition: min-width 0.3s ease-in-out;
 			overflow: hidden;
+			min-width: 100%;
+			transition: transform 0.3s ease-in-out;
+			display: none;
 			&.active {
-				min-width: 100%;
+				display: flex;
 			}
 		}
 	}
@@ -24,15 +25,17 @@
 		}
 		&__text {
 			@include m.size(50%, 100%);
-			@include m.flex($align: center);
+			@include m.flex($align: top, $direction: column, $gap: 10px);
 			text-align: justify;
-			padding-left: 100px;
 			&__container {
 				@include m.size(100%, 100%);
-				@include m.flex(space-evenly);
+				@include m.flex(space-evenly, center);
 				flex-basis: auto;
 				padding: 100px;
 				@include m.font($size: 20px);
+			}
+			&__list {
+				list-style: inside;
 			}
 		}
 	}
@@ -47,20 +50,18 @@
 			right: 0;
 		}
 		&:hover {
-			background-color: rgba(0, 0, 0, 0.1);
+			font-size: 60px;
+			transition: font-size 0.1s ease-out;
 		}
 	}
-}
-
-.presentation {
-	@include m.size(50%);
-	@include m.font($size: 20px);
-	&__menu {
-		@include m.flex(space-evenly);
-		@include m.size(100%);
-	}
-	&__item {
-		@include m.font($size: 20px);
-		cursor: pointer;
+	&__image {
+		border-radius: 50%;
+		width: 30%;
+		object-fit: contain;
+		height: 30vw;
+		&--formation {
+			border-radius: 0;
+			object-fit: contain;
+		}
 	}
 }

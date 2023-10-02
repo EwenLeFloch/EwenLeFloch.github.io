@@ -9,10 +9,6 @@ const About = () => {
 		{
 			title: "MA FORMATION",
 		},
-		{
-			title: "Titre 3",
-			paragraph: "Description du contenu 3.",
-		},
 	];
 
 	return (

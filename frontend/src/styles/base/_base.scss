@@ -15,10 +15,38 @@ main {
 section {
 	@include m.size(100%, 100vh);
 	&:nth-child(even) {
-		background-color: v.$primary-color;
+		background: linear-gradient(
+			to bottom left,
+			white,
+			white 20%,
+			v.$primary-color 20%,
+			v.$primary-color 80%,
+			white 80%,
+			white
+		);
 		& > * {
 			color: white;
 		}
+	}
+	&:nth-child(odd) {
+		background: linear-gradient(
+			to bottom left,
+			v.$primary-color,
+			v.$primary-color 20%,
+			white 20%,
+			white 80%,
+			v.$primary-color 80%,
+			v.$primary-color
+		);
+	}
+	&:last-child {
+		background: linear-gradient(
+			to bottom left,
+			v.$primary-color,
+			v.$primary-color 20%,
+			white 20%,
+			white
+		);
 	}
 }
 
