@@ -23,6 +23,12 @@
 		@include m.position($bottom: 0px, $left: 50%);
 		@include m.size(182px);
 		transform: translateX(-50%);
+		& > a {
+			height: 100%;
+		}
+		& > img {
+			height: 100%;
+		}
 		&__container {
 			position: relative;
 			@include m.size(100%, 100%);

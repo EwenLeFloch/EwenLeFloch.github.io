@@ -13,6 +13,7 @@ main {
 	@include m.size(100%, 100%);
 }
 section {
+	z-index: -2;
 	@include m.size(100%, 100vh);
 	&:nth-child(even) {
 		background: linear-gradient(
