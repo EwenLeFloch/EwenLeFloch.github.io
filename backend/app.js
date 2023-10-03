@@ -26,6 +26,10 @@ app.use((req, res, next) => {
 });
 
 // Routes
+const usersRoutes = require("./routes/usersRoute");
+app.use("/api/auth", usersRoutes);
+const projectsRoutes = require("./routes/projectsRoute");
+app.use("/api/projects", projectsRoutes);
 
 // Gestion des erreurs
 app.use((error, req, res, next) => {
