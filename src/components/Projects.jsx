@@ -27,6 +27,7 @@ const Projects = () => {
 									className="projects__article__button"
 									href={project.link}
 									target="_blank"
+									rel="noreferrer"
 								>
 									Site
 								</a>
@@ -34,6 +35,7 @@ const Projects = () => {
 									className="projects__article__button"
 									href={project.github}
 									target="_blank"
+									rel="noreferrer"
 								>
 									<img
 										src="../assets/images/github.webp"
@@ -49,9 +51,11 @@ const Projects = () => {
 							</div>
 						</div>
 						<a
+							aria-label="site"
 							className="projects__link"
 							href={project.link}
 							target="_blank"
+							rel="noreferrer"
 						></a>
 					</article>
 				))}
