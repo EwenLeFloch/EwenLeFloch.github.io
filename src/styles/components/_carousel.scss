@@ -4,7 +4,7 @@
 .carousel {
 	@include m.flex(center, center, column);
 	&__container {
-		@include m.size(100%, 100%);
+		@include m.size(70%, 100%);
 		@include m.flex();
 		overflow: hidden;
 		&__slide {
@@ -29,9 +29,9 @@
 			text-align: justify;
 			&__container {
 				@include m.size(100%, 100%);
-				@include m.flex(space-evenly, center);
+				@include m.flex(space-between, center);
 				flex-basis: auto;
-				padding: 100px;
+				padding: 100px 0;
 				@include m.font($size: 20px);
 			}
 			&__list {
@@ -56,9 +56,9 @@
 	}
 	&__image {
 		border-radius: 50%;
-		width: 30%;
 		object-fit: contain;
-		height: 30vw;
+		max-height: 100%;
+		max-width: 50%;
 		&--formation {
 			border-radius: 0;
 			object-fit: contain;

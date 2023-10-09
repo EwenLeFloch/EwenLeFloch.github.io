@@ -3,24 +3,31 @@
 
 .projects {
 	@include m.size(100%);
-	min-height: 100vh;
-	@include m.flex(space-between, $align: center, $direction: column);
+	@include m.flex(
+		space-between,
+		$align: center,
+		$direction: column,
+		$gap: 50px
+	);
 
 	& :nth-child(odd) {
 		flex-direction: row-reverse;
 	}
 	&__article {
-		@include m.size(80%, 260px);
+		@include m.size(70%, 260px);
 		@include m.flex(space-between, $align: center);
 		position: relative;
+		padding-top: 50px;
 		&__image {
-			height: 100%;
+			max-height: 100%;
+			aspect-ratio: 428 / 260;
+			max-width: 40vw;
 		}
 		&__content {
-			width: 50%;
+			width: 60%;
 			height: 100%;
 			text-align: justify;
-			padding: 10px;
+			@include m.flex(space-between, $direction: column);
 		}
 		&__title {
 			font-size: 30px;

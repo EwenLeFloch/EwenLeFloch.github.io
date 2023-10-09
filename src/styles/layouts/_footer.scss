@@ -7,7 +7,7 @@
 	background-color: v.$primary-color;
 	&__content {
 		@include m.flex(space-between);
-		@include m.size(80%);
+		@include m.size(70%);
 	}
 	&__button {
 		@include m.flex(center, center, column);
