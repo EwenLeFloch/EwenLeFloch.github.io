@@ -1,0 +1,24 @@
+[
+	{
+		"_id": "1",
+		"title": "Booki",
+		"cover": "booki.webp",
+		"description": "Booki est un site web qui permet aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Il s'agit du tout premier projet de la formation développeur web d'Openclassrooms. Ce projet m'a permis d'apprendre à lire et intégrer une maquette, ainsi que d'apprendre et comprendre les bases d'un site statique en HTML et CSS.",
+		"role": "Développeur Frontend",
+		"tags": ["HTML", "CSS", "Responsive"],
+		"link": "https://ewenlefloch.github.io/booki/",
+		"github": "https://github.com/EwenLeFloch/booki",
+		"project": "Formation"
+	},
+	{
+		"_id": "2",
+		"title": "ArchiWebos",
+		"cover": "archiwebos.webp",
+		"description": "ArchiWebos is a web agency, this particular website is for an interior designer",
+		"role": "Frontend Developer",
+		"tags": ["HTML", "CSS", "JavaScript"],
+		"link": "https://archiwebos.ewenlefloch.fr",
+		"github": "https://github.com/EwenLeFloch/archiwebos",
+		"project": "School"
+	}
+]

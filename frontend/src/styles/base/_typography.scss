@@ -1,4 +1,20 @@
 @font-face {
-	font-family: Coves;
+	font-family: "CovesBold";
 	src: url("../../assets/Coves\ Bold.otf");
+}
+@font-face {
+	font-family: "CovesLight";
+	src: url("../../assets/Coves\ Light.otf");
+}
+
+body {
+	font-family: CovesLight;
+}
+
+header,
+h1,
+h2,
+h3,
+.projects {
+	font-family: CovesBold;
 }

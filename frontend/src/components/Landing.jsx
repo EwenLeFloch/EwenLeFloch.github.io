@@ -1,16 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import TypeWriter from "react-typed";
-// import Modal from "./Modal";
 
 const Landing = () => {
-	// const [showModal, setShowModal] = useState(false);
-
-	// const handleLoginClick = () => {
-	// 	setShowModal(true);
-	// };
-	// const handleCloseModal = () => {
-	// 	setShowModal(false);
-	// };
 	return (
 		<section className="home" id="home">
 			<div className="home__text">
@@ -27,19 +18,11 @@ const Landing = () => {
 				<p className="home__text__description"></p>
 			</div>
 			<div className="home__image__container">
-				{/* <div className="home__image"> */}
-				{/* <a href="#" onClick={handleLoginClick}> */}
 				<img
 					className="home__image"
 					src="assets/images/web-developer.png"
 					alt="Ewen Le Floch"
 				/>
-				{/* </a> */}
-				{/* <Modal
-						showModal={showModal}
-						handleClose={handleCloseModal}
-					/>
-				</div> */}
 				<img
 					className="home__logo home__logo--html"
 					src="assets/images/html.png"

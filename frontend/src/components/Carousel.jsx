@@ -15,14 +15,6 @@ const Carousel = ({ items }) => {
 		);
 	};
 
-	const showSkills = () => {
-		return (
-			<div className="presentation__content presentation__content--skills">
-				oui
-			</div>
-		);
-	};
-
 	const carouselContent = (item, index) => {
 		if (index === 0) {
 			return (

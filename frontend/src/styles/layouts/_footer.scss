@@ -5,16 +5,20 @@
 	@include m.size(100%, 200px);
 	@include m.flex(center, center, $gap: 10%);
 	background-color: v.$primary-color;
+	&__content {
+		@include m.flex(space-between);
+		@include m.size(80%);
+	}
 	&__button {
 		@include m.flex(center, center, column);
 		color: white;
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 		border: none;
 		border-radius: 15px;
 		background: linear-gradient(145deg, #690ede, #7d11ff);
 		box-shadow: 5px 5px 14px #550cb4, -5px -5px 14px #9514ff;
-		font-size: 30px;
+		font-size: 20px;
 		transition: width 0.4s ease-in-out;
 		cursor: pointer;
 		&:hover {

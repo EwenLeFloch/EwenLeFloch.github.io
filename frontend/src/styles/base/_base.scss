@@ -1,9 +1,6 @@
 @use "../utils/variables" as v;
 @use "../utils/mixins" as m;
 
-* {
-	font-family: Coves;
-}
 #root {
 	@include m.flex(space-between, $direction: column, $align: center);
 	@include m.size(100%, auto);
@@ -19,10 +16,10 @@ section {
 		background: linear-gradient(
 			to bottom left,
 			white,
-			white 20%,
-			v.$primary-color 20%,
-			v.$primary-color 80%,
-			white 80%,
+			white 15%,
+			v.$primary-color 15%,
+			v.$primary-color 85%,
+			white 85%,
 			white
 		);
 		& > * {
@@ -33,10 +30,10 @@ section {
 		background: linear-gradient(
 			to bottom left,
 			v.$primary-color,
-			v.$primary-color 20%,
-			white 20%,
-			white 80%,
-			v.$primary-color 80%,
+			v.$primary-color 15%,
+			white 15%,
+			white 85%,
+			v.$primary-color 85%,
 			v.$primary-color
 		);
 	}

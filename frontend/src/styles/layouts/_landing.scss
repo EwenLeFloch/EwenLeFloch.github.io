@@ -31,35 +31,34 @@
 		}
 		&__container {
 			position: relative;
-			@include m.size(100%, 100%);
+			@include m.size(80%, 100%);
 		}
 	}
 	&__logo {
 		@include m.size(50px);
-		transform: translate(-50%, -50%);
-
 		&--html {
-			@include m.position($top: 80%, $left: 10%);
+			@include m.position($top: 80%, $left: 0);
 		}
 		&--css {
-			@include m.position($top: 50%, $left: 20%);
+			@include m.position($top: 50%, $left: 10%);
 		}
 		&--js {
-			@include m.position($top: 30%, $left: 35%);
+			@include m.position($top: 30%, $left: 25%);
 			border-radius: 5px;
 		}
 		&--react {
 			@include m.position($top: 20%, $left: 50%);
+			transform: translate(-50%);
 		}
 		&--node {
-			@include m.position($top: 30%, $left: 65%);
+			@include m.position($top: 30%, $right: 25%);
 		}
 		&--sass {
-			@include m.position($top: 50%, $left: 80%);
+			@include m.position($top: 50%, $right: 10%);
 		}
 
 		&--mongoDB {
-			@include m.position($top: 80%, $left: 90%);
+			@include m.position($top: 80%, $right: 0%);
 		}
 	}
 }
