@@ -56,7 +56,9 @@ const Projects = () => {
 							href={project.link}
 							target="_blank"
 							rel="noreferrer"
-						></a>
+						>
+							{" "}
+						</a>
 					</article>
 				))}
 		</section>
