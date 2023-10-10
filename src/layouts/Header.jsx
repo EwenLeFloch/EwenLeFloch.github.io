@@ -7,11 +7,14 @@ const Header = () => {
 	const [isOpen, setOpen] = useState(false);
 	const location = useLocation();
 
+	const handleLinkClick = () => {
+		setOpen(!isOpen);
+	};
 	return (
 		<header className="header">
 			<nav className="header__nav">
 				<ul
-					className={`header__nav__list ${
+					className={`header__nav__list header__nav__list${
 						isOpen ? "--open" : "--closed"
 					}`}
 				>
@@ -24,6 +27,7 @@ const Header = () => {
 									: ""
 							}
 							to="#home"
+							onClick={handleLinkClick}
 						>
 							Ewen
 						</Link>
@@ -34,6 +38,7 @@ const Header = () => {
 								location.hash === "#about" ? "active" : ""
 							}
 							to="#about"
+							onClick={handleLinkClick}
 						>
 							À propos
 						</Link>
@@ -44,6 +49,7 @@ const Header = () => {
 								location.hash === "#projects" ? "active" : ""
 							}
 							to="#projects"
+							onClick={handleLinkClick}
 						>
 							Projets
 						</Link>

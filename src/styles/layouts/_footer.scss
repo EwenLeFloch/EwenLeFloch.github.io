@@ -45,3 +45,16 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.footer {
+		&__button {
+			font-size: 14px;
+			width: 56px;
+			height: 56px;
+			&__text {
+				font-size: 14px;
+			}
+		}
+	}
+}

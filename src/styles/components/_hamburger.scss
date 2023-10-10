@@ -1,11 +1,7 @@
 @use "../utils/mixins" as m;
 
-.hamburger-react {
-	display: none;
-}
-
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 	.hamburger-react {
-		display: block;
+		display: none;
 	}
 }
