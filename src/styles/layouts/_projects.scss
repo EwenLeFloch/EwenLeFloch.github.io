@@ -15,17 +15,6 @@
 		@include m.size(70%, 260px);
 		@include m.flex(space-between, $align: center);
 		position: relative;
-		&::before {
-			content: "";
-			position: absolute;
-			width: 70%;
-			height: 0;
-			border-top: 1px dashed black;
-			top: -25px;
-			left: 50%;
-			transform: translate(-50%);
-			margin: auto;
-		}
 		&:nth-child(odd) {
 			display: flex;
 			flex-direction: row-reverse;
@@ -138,6 +127,12 @@
 			height: 100%;
 			&::before {
 				width: 70%;
+				content: "";
+				position: absolute;
+				height: 0;
+				border-top: 1px dashed black;
+				top: -25px;
+				margin: auto;
 			}
 			&__title {
 				font-size: 20px;
