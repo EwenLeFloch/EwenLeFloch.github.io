@@ -54,6 +54,17 @@ const Header = () => {
 							Projets
 						</Link>
 					</li>
+					<li className="header__nav__list__item">
+						<Link
+							className={
+								location.hash === "#contact" ? "active" : ""
+							}
+							to="#contact"
+							onClick={handleLinkClick}
+						>
+							Contact
+						</Link>
+					</li>
 				</ul>
 				<Hamburger
 					toggled={isOpen}

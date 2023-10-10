@@ -5,7 +5,7 @@ import { faPhone, faAt } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
 	return (
-		<footer className="footer">
+		<footer className="footer" id="contact">
 			<div className="footer__content">
 				<a
 					className="footer__button"
