@@ -15,21 +15,15 @@
 		flex-direction: row-reverse;
 	}
 	&__article {
+		padding-top: 20px;
 		@include m.size(70%, 260px);
-		@include m.flex(space-between, $align: center, $gap: 50px);
+		@include m.flex(space-between, $align: center);
 		position: relative;
-		&::after {
-			content: "";
-			position: absolute;
-			width: 70%;
-			height: 0;
-			border-top: 1px dashed black;
-			top: -25px;
-		}
+
 		&__image {
 			max-height: 100%;
 			aspect-ratio: 428 / 260;
-			max-width: 40vw;
+			max-width: 30%;
 			&--small {
 				display: none;
 			}
@@ -121,7 +115,7 @@
 	&__link {
 		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: calc(100% - 20px);
 	}
 }
 
@@ -129,8 +123,18 @@
 	.projects {
 		&__article {
 			flex-direction: column;
+			gap: 50px;
 			width: 100%;
 			height: 100%;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 70%;
+				height: 0;
+				border-top: 1px dashed black;
+				top: -25px;
+				margin: auto;
+			}
 			&__title {
 				font-size: 20px;
 				order: 1;
@@ -140,6 +144,7 @@
 				gap: 10px;
 			}
 			&__image {
+				max-width: 50%;
 				order: 2;
 				display: none;
 				&--small {

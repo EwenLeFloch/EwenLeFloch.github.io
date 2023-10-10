@@ -9,7 +9,7 @@ const Landing = () => {
 					<TypeWriter
 						strings={[
 							"SALUT ! MOI  C'EST EWEN.",
-							"JE SUIS DÉVELOPPEUR WEB",
+							"JE SUIS DÉVELOPPEUR WEB !",
 						]}
 						typeSpeed={50}
 						loop

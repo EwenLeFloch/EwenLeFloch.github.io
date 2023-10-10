@@ -13,6 +13,8 @@
 			@include m.font(black, 40px);
 			font-family: Georgia;
 			align-items: center;
+			max-width: 70%;
+			position: absolute;
 		}
 	}
 	&__description {
@@ -21,7 +23,8 @@
 	}
 	&__image {
 		@include m.position($bottom: 0px, $left: 50%);
-		@include m.size(182px);
+		@include m.size(30vw);
+		max-width: 182px;
 		transform: translateX(-50%);
 		& > a {
 			height: 100%;
@@ -35,7 +38,8 @@
 		}
 	}
 	&__logo {
-		@include m.size(50px);
+		@include m.size(15vw);
+		max-width: 50px;
 		&--html {
 			@include m.position($top: 80%, $left: 0);
 		}
@@ -64,7 +68,9 @@
 }
 
 @media (max-width: 768px) {
-	.home__text__title {
-		font-size: 20px;
+	.home {
+		&__text__title {
+			font-size: 20px;
+		}
 	}
 }

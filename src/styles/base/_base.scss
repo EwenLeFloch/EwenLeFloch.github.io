@@ -32,9 +32,18 @@ section {
 			v.$primary-color,
 			v.$primary-color 15%,
 			white 15%,
-			white 90%,
-			v.$primary-color 10%,
+			white 85%,
+			v.$primary-color 85%,
 			v.$primary-color
+		);
+	}
+	&:last-child {
+		background: linear-gradient(
+			to bottom left,
+			v.$primary-color,
+			v.$primary-color 20%,
+			white 20%,
+			white
 		);
 	}
 }

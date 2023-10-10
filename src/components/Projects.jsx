@@ -5,7 +5,7 @@ import Tags from "./Tags";
 const Projects = () => {
 	return (
 		<section id="projects" className="projects">
-			<h2 className="section__title">Mes projets</h2>
+			<h2 className="section__title">MES PROJETS</h2>
 			{projects &&
 				projects.map((project) => (
 					<article key={project._id} className="projects__article">

@@ -5,7 +5,7 @@
 	@include m.position(fixed);
 	@include m.size(100%, 60px);
 	background-color: white;
-	z-index: 2;
+	z-index: 3;
 	&__nav {
 		@include m.size(100%, 100%);
 		@include m.flex(center);
@@ -22,7 +22,7 @@
 
 					height: 100%;
 					color: black;
-					z-index: 2;
+					z-index: 3;
 				}
 				& > .active {
 					color: #7510f7;
