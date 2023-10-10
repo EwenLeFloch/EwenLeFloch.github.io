@@ -37,19 +37,25 @@ section {
 			v.$primary-color
 		);
 	}
-	&:last-child {
-		background: linear-gradient(
-			to bottom left,
-			v.$primary-color,
-			v.$primary-color 20%,
-			white 20%,
-			white
-		);
-	}
+	// &:last-child {
+	// 	background: linear-gradient(
+	// 		to bottom left,
+	// 		v.$primary-color,
+	// 		v.$primary-color 20%,
+	// 		white 20%,
+	// 		white
+	// 	);
+	// }
 }
 
 .section__title {
 	@include m.flex(center);
 	padding-top: 100px;
 	font-size: 40px;
+}
+
+@media (max-width: 768px) {
+	.section__title {
+		font-size: 30px;
+	}
 }
