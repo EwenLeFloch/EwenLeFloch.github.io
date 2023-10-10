@@ -65,3 +65,28 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.carousel {
+		&__content {
+			&__text {
+				font-size: 14px;
+				width: 100%;
+				&__container {
+					flex-direction: column;
+					padding: 50px 0;
+				}
+			}
+			&__title {
+				@include m.font($size: 30px);
+			}
+		}
+		&__button {
+			font-size: 20px;
+			width: 30px;
+			&:hover {
+				font-size: 30px;
+			}
+		}
+	}
+}
