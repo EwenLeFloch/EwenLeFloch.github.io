@@ -10,16 +10,26 @@
 		$gap: 50px
 	);
 
-	& :nth-child(odd) .projects__article {
-		display: flex;
-		flex-direction: row-reverse;
-	}
 	&__article {
 		padding-top: 20px;
 		@include m.size(70%, 260px);
 		@include m.flex(space-between, $align: center);
 		position: relative;
-
+		&::before {
+			content: "";
+			position: absolute;
+			width: 70%;
+			height: 0;
+			border-top: 1px dashed black;
+			top: -25px;
+			left: 50%;
+			transform: translate(-50%);
+			margin: auto;
+		}
+		&:nth-child(odd) {
+			display: flex;
+			flex-direction: row-reverse;
+		}
 		&__image {
 			max-height: 100%;
 			aspect-ratio: 428 / 260;
@@ -127,13 +137,7 @@
 			width: 100%;
 			height: 100%;
 			&::before {
-				content: "";
-				position: absolute;
 				width: 70%;
-				height: 0;
-				border-top: 1px dashed black;
-				top: -25px;
-				margin: auto;
 			}
 			&__title {
 				font-size: 20px;
@@ -175,9 +179,9 @@
 					justify-content: space-evenly;
 				}
 			}
-		}
-		& :nth-child(odd) .projects__article {
-			flex-direction: column;
+			&:nth-child(odd) {
+				flex-direction: column;
+			}
 		}
 	}
 }

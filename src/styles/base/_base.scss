@@ -2,7 +2,12 @@
 @use "../utils/mixins" as m;
 
 #root {
-	@include m.flex(space-between, $direction: column, $align: center);
+	@include m.flex(
+		space-between,
+		$direction: column,
+		$align: center,
+		$gap: 50px
+	);
 	@include m.size(100%, auto);
 }
 
