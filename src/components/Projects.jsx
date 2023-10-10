@@ -17,6 +17,11 @@ const Projects = () => {
 						<div className="projects__article__content">
 							<h3 className="projects__article__title">
 								{project.title}
+								<img
+									className="projects__article__image projects__article__image--small"
+									src={`../assets/images/${project.cover}`}
+									alt={project.title}
+								/>
 							</h3>
 							<p className="projects__article__text">
 								{project.description}
