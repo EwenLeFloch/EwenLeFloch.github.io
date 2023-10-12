@@ -14,7 +14,7 @@
 		"_id": "2",
 		"title": "ArchiWebos",
 		"cover": "archiwebos.webp",
-		"description": "ArchiWebos est une agence web. Pour ce projet, il fallait rendre le site statique d'une architecte en un site dynamique en utilisant JavaScript. Il m'a permis d'apprendre à faire la relation entre backend et frontend en fetchant une API, ainsi que de créer des évènements en JS.",
+		"description": "ArchiWebos est une agence web. Pour ce projet, il fallait rendre le site statique d'une architecte en un site dynamique en utilisant JavaScript. Il m'a permis d'apprendre à faire la relation entre backend et frontend en fetchant une API, à créer des évènements et à manipuler le dom.",
 		"role": "Développeur Frontend",
 		"tags": ["HTML", "CSS", "JavaScript"],
 		"link": "https://archiwebos.ewenlefloch.fr",
@@ -23,13 +23,13 @@
 	},
 	{
 		"_id": "3",
-		"title": "ArchiWebos",
-		"cover": "archiwebos.webp",
-		"description": "ArchiWebos est une agence web",
-		"role": "Frontend Developer",
-		"tags": ["HTML", "CSS", "JavaScript"],
-		"link": "https://archiwebos.ewenlefloch.fr",
-		"github": "https://github.com/EwenLeFloch/archiwebos",
-		"project": "School"
+		"title": "Nina Carducci",
+		"cover": "nina-carducci.webp",
+		"description": "Nina Carducci est une photographe que l'on a contacté afin de proposer nos services pour optimiser, améliorer le SEO et débugger son site web. L'objectif étant d'avoir un score lighthouse moyen de 90 ou plus, j'ai donc utilisé des outils tels que Gimp pour optimiser les images ou l'extension Wave pour améliorer l'accessibilité ou encore les google rich snippets et les balise méta pour améliorer le SEO.",
+		"role": "Développeur frontend",
+		"tags": ["SEO", "Google Rich Snippets", "Wave"],
+		"link": "https://nina-carducci.github.io/",
+		"github": "https://github.com/EwenLeFloch/nina-carducci",
+		"project": "Formation"
 	}
 ]
