@@ -14,12 +14,12 @@
 		"_id": "2",
 		"title": "ArchiWebos",
 		"cover": "archiwebos.webp",
-		"description": "ArchiWebos est une agence web",
-		"role": "Frontend Developer",
+		"description": "ArchiWebos est une agence web. Pour ce projet, il fallait rendre le site statique d'une architecte en un site dynamique en utilisant JavaScript. Il m'a permis d'apprendre à faire la relation entre backend et frontend en fetchant une API, ainsi que de créer des évènements en JS.",
+		"role": "Développeur Frontend",
 		"tags": ["HTML", "CSS", "JavaScript"],
 		"link": "https://archiwebos.ewenlefloch.fr",
 		"github": "https://github.com/EwenLeFloch/archiwebos",
-		"project": "School"
+		"project": "Formation"
 	},
 	{
 		"_id": "3",
