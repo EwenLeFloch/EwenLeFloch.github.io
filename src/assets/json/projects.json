@@ -24,7 +24,7 @@
 	{
 		"_id": "3",
 		"title": "Nina Carducci",
-		"cover": "nina-carducci.webp",
+		"cover": "nina_carducci.webp",
 		"description": "Nina Carducci est une photographe que l'on a contacté afin de proposer nos services pour optimiser, améliorer le SEO et débugger son site web. L'objectif étant d'avoir un score lighthouse moyen de 90 ou plus, j'ai donc utilisé des outils tels que Gimp pour optimiser les images ou l'extension Wave pour améliorer l'accessibilité ou encore les google rich snippets et les balise méta pour améliorer le SEO.",
 		"role": "Développeur frontend",
 		"tags": ["SEO", "Google Rich Snippets", "Wave"],
