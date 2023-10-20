@@ -20,7 +20,7 @@ const Projects = () => {
 								<img
 									className="projects__article__image projects__article__image--small"
 									src={`../assets/images/${project.cover}`}
-									alt={project.title}
+									alt={`${project.title} sur ordinateur`}
 								/>
 							</h3>
 							<p className="projects__article__text">
