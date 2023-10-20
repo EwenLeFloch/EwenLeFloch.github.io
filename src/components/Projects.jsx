@@ -12,7 +12,7 @@ const Projects = () => {
 						<img
 							className="projects__article__image"
 							src={`../assets/images/${project.cover}`}
-							alt={project.title}
+							alt={`${project.title} sur ordinateur`}
 						/>
 						<div className="projects__article__content">
 							<h3 className="projects__article__title">

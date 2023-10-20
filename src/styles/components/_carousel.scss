@@ -26,7 +26,6 @@
 		&__text {
 			@include m.size(50%, 100%);
 			@include m.flex($align: top, $direction: column, $gap: 10px);
-			text-align: justify;
 			&__container {
 				@include m.size(100%, 100%);
 				@include m.flex(space-between, center);

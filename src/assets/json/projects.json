@@ -36,7 +36,7 @@
 		"_id": "4",
 		"title": "Kasa",
 		"cover": "kasa.webp",
-		"description": "En tant que développeur front-end freelance, Kasa nous a recruté pour développer sa nouvelle plateforme web. Cette refonte totale en stack complète JavaScript, nous avons dû coder en React et SCSS.",
+		"description": "En tant que développeur front-end freelance, Kasa nous a recruté pour développer sa nouvelle plateforme web. Cette refonte totale en stack complète JavaScript fait que nous avons dû coder en React et SCSS.",
 		"role": "Développeur Front-end Freelance",
 		"tags": ["REACT", "SCSS", "Responsive"],
 		"link": "https://kasa.ewenlefloch.fr",

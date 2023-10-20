@@ -30,7 +30,6 @@
 		&__content {
 			width: 60%;
 			height: 100%;
-			text-align: justify;
 			@include m.flex(space-between, $direction: column);
 		}
 		&__title {
