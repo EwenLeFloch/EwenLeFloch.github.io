@@ -4,7 +4,7 @@
 		"title": "Booki",
 		"cover": "booki.webp",
 		"description": "Booki est un site web qui permet aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Il s'agit du tout premier projet de la formation développeur web d'Openclassrooms. Ce projet m'a permis d'apprendre à lire et intégrer une maquette, ainsi que d'apprendre et comprendre les bases d'un site statique en HTML et CSS.",
-		"role": "Développeur Frontend",
+		"role": "Développeur Front-end",
 		"tags": ["HTML", "CSS", "Responsive"],
 		"link": "https://ewenlefloch.github.io/booki/",
 		"github": "https://github.com/EwenLeFloch/booki",
@@ -15,7 +15,7 @@
 		"title": "ArchiWebos",
 		"cover": "archiwebos.webp",
 		"description": "ArchiWebos est une agence web. Pour ce projet, il fallait rendre le site statique d'une architecte en un site dynamique en utilisant JavaScript. Il m'a permis d'apprendre à faire la relation entre backend et frontend en fetchant une API, à créer des évènements et à manipuler le dom.",
-		"role": "Développeur Frontend",
+		"role": "Développeur Front-end",
 		"tags": ["HTML", "CSS", "JavaScript"],
 		"link": "https://archiwebos.ewenlefloch.fr",
 		"github": "https://github.com/EwenLeFloch/archiwebos",
@@ -26,10 +26,21 @@
 		"title": "Nina Carducci",
 		"cover": "nina_carducci.webp",
 		"description": "Nina Carducci est une photographe que l'on a contacté afin de proposer nos services pour optimiser, améliorer le SEO et débugger son site web. L'objectif étant d'avoir un score lighthouse moyen de 90 ou plus, j'ai donc utilisé des outils tels que Gimp pour optimiser les images ou l'extension Wave pour améliorer l'accessibilité ou encore les google rich snippets et les balise méta pour améliorer le SEO.",
-		"role": "Développeur frontend",
+		"role": "Développeur Front-end",
 		"tags": ["SEO", "Google Rich Snippets", "Wave"],
 		"link": "https://EwenLeFloch.github.io/nina-carducci",
 		"github": "https://github.com/EwenLeFloch/nina-carducci",
+		"project": "Formation"
+	},
+	{
+		"_id": "4",
+		"title": "Kasa",
+		"cover": "kasa.webp",
+		"description": "En tant que développeur front-end freelance, Kasa nous a recruté pour développer sa nouvelle plateforme web. Cette refonte totale en stack complète JavaScript, nous avons dû coder en React et SCSS.",
+		"role": "Développeur Front-end Freelance",
+		"tags": ["REACT", "SCSS", "Responsive"],
+		"link": "https://kasa.ewenlefloch.fr",
+		"github": "https://github.com/EwenLeFloch/Kasa",
 		"project": "Formation"
 	}
 ]
