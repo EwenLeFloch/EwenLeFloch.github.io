@@ -89,3 +89,13 @@
 		}
 	}
 }
+
+@media (max-width: 1100px) {
+	.carousel {
+		&__content {
+			&__text {
+				font-size: 14px;
+			}
+		}
+	}
+}
