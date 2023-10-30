@@ -28,14 +28,19 @@ const Projects = () => {
 							</p>
 							<Tags tags={project.tags} />
 							<div className="projects__article__button__list">
-								<a
-									className="projects__article__button"
-									href={project.link}
-									target="_blank"
-									rel="noreferrer"
-								>
-									Site
-								</a>
+								{project.link != null ? (
+									<a
+										className="projects__article__button"
+										href={project.link}
+										target="_blank"
+										rel="noreferrer"
+									>
+										Site
+									</a>
+								) : (
+									""
+								)}
+
 								<a
 									className="projects__article__button"
 									href={project.github}

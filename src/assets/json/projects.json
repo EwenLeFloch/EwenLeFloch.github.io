@@ -42,5 +42,16 @@
 		"link": "https://kasa.ewenlefloch.fr",
 		"github": "https://github.com/EwenLeFloch/Kasa",
 		"project": "Formation"
+	},
+	{
+		"_id": "5",
+		"title": "Mon Vieux Grimoire",
+		"cover": "Mon_Vieux_Grimoire.webp",
+		"description": "Développeur back-end en freelance, nous avons été contacté par un développeur front-end plus expérimenté pour mettre en place l'API, en utilisant NodeJS, Express et MongoDB, d'un site de notation de livre : Mon Vieux Grimoire.",
+		"role": "Développeur Back-end Freelance",
+		"tags": ["Node JS", "Express", "Mongo DB"],
+		"link": null,
+		"github": "https://github.com/EwenLeFloch/Mon-Vieux-Grimoire",
+		"project": "Formation"
 	}
 ]
