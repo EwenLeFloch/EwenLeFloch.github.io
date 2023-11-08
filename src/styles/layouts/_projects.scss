@@ -2,14 +2,27 @@
 @use "../utils/mixins" as m;
 
 .projects {
-	@include m.size(100%);
 	@include m.flex(
 		space-between,
 		$align: center,
 		$direction: column,
 		$gap: 50px
 	);
-
+	&__gallery {
+		@include m.size(100%, 100%);
+		@include m.flex(
+			space-between,
+			$align: center,
+			$direction: column,
+			$gap: 50px
+		);
+		overflow: scroll;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
 	&__article {
 		padding-top: 20px;
 		@include m.size(70%, 260px);
