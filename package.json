@@ -19,7 +19,6 @@
 		"react-typed": "^1.2.0",
 		"sass": "^1.66.1"
 	},
-	"homepage": "https://EwenLeFloch.github.io/Portfolio",
 	"scripts": {
 		"start": "react-scripts start",
 		"predeploy": "npm run build",

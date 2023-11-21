@@ -15,7 +15,7 @@ const Projects = () => {
 						>
 							<img
 								className="projects__article__image"
-								src={`../assets/images/${project.cover}`}
+								src={`./assets/images/${project.cover}`}
 								alt={`${project.title} sur ordinateur`}
 							/>
 							<div className="projects__article__content">
@@ -23,7 +23,7 @@ const Projects = () => {
 									{project.title}
 									<img
 										className="projects__article__image projects__article__image--small"
-										src={`../assets/images/${project.cover}`}
+										src={`./assets/images/${project.cover}`}
 										alt={`${project.title} sur ordinateur`}
 									/>
 								</h3>
@@ -52,12 +52,12 @@ const Projects = () => {
 										rel="noreferrer"
 									>
 										<img
-											src="../assets/images/github.webp"
+											src="./assets/images/github.webp"
 											alt=""
 										/>
 										<img
 											className="hover"
-											src="../assets/images/github-hover.webp"
+											src="./assets/images/github-hover.webp"
 											alt=""
 										/>
 										Github
