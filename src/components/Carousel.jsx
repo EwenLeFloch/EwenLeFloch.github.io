@@ -35,7 +35,7 @@ const Carousel = ({ items }) => {
 					</p>
 					<img
 						className="carousel__image"
-						src="assets/images/ewen.webp"
+						src="../assets/images/ewen.webp"
 						alt="Ewen Le Floch"
 					></img>
 				</div>
