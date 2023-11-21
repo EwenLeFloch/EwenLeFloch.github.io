@@ -10,7 +10,6 @@ const Home = () => {
 		<>
 			<Header />
 			<main className="main">
-				Justine :
 				<Landing />
 				<About />
 				<Projects />
