@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2d9e4682.css",
-    "main.js": "/Portfolio/static/js/main.cfd7f171.js",
-    "static/media/Coves Light.otf": "/Portfolio/static/media/Coves Light.41080f22fadeee876358.otf",
-    "static/media/Coves Bold.otf": "/Portfolio/static/media/Coves Bold.9d230c2d58c26422b6fc.otf",
-    "index.html": "/Portfolio/index.html",
-    "main.2d9e4682.css.map": "/Portfolio/static/css/main.2d9e4682.css.map",
-    "main.cfd7f171.js.map": "/Portfolio/static/js/main.cfd7f171.js.map"
+    "main.css": "/static/css/main.59b584f7.css",
+    "main.js": "/static/js/main.07fb30b8.js",
+    "static/media/Coves Light.otf": "/static/media/Coves Light.41080f22fadeee876358.otf",
+    "static/media/Coves Bold.otf": "/static/media/Coves Bold.9d230c2d58c26422b6fc.otf",
+    "index.html": "/index.html",
+    "main.59b584f7.css.map": "/static/css/main.59b584f7.css.map",
+    "main.07fb30b8.js.map": "/static/js/main.07fb30b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d9e4682.css",
-    "static/js/main.cfd7f171.js"
+    "static/css/main.59b584f7.css",
+    "static/js/main.07fb30b8.js"
   ]
 }
