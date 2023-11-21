@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.2d9e4682.css",
-    "main.js": "/Portfolio/static/js/main.9e46a361.js",
+    "main.js": "/Portfolio/static/js/main.52650fe9.js",
     "static/media/Coves Light.otf": "/Portfolio/static/media/Coves Light.41080f22fadeee876358.otf",
     "static/media/Coves Bold.otf": "/Portfolio/static/media/Coves Bold.9d230c2d58c26422b6fc.otf",
     "index.html": "/Portfolio/index.html",
     "main.2d9e4682.css.map": "/Portfolio/static/css/main.2d9e4682.css.map",
-    "main.9e46a361.js.map": "/Portfolio/static/js/main.9e46a361.js.map"
+    "main.52650fe9.js.map": "/Portfolio/static/js/main.52650fe9.js.map"
   },
   "entrypoints": [
     "static/css/main.2d9e4682.css",
-    "static/js/main.9e46a361.js"
+    "static/js/main.52650fe9.js"
   ]
 }
