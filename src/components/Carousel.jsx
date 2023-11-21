@@ -62,7 +62,7 @@ const Carousel = ({ items }) => {
 					</div>
 					<img
 						className="carousel__image carousel__image--formation"
-						src="assets/images/openclassrooms.webp"
+						src="../assets/images/openclassrooms.webp"
 						alt="Ewen Le Floch"
 					></img>
 				</div>
