@@ -22,14 +22,14 @@ const Footer = () => {
 				</a>
 				<a
 					className="footer__button"
-					href="mailto:contact@ewenlefloch.fr"
+					href="mailto:ewenlelf@gmail.com"
 					target="_blank"
 					rel="noreferrer"
 				>
 					<FontAwesomeIcon icon={faAt} />
 					<p className="footer__button__text">
-						con{/*No to robots*/}ta{/*No to robots*/}ct@
-						{/*No to robots*/}ewen{/*No to robots*/}lefloch.fr
+						ewe{/*No to robots*/}nle{/*No to robots*/}lf@
+						{/*No to robots*/}gmail{/*No to robots*/}.com
 					</p>
 				</a>
 				<button className="footer__button">
